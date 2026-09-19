@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-VroomlyApplication<vroomly>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.vroomly.vroomly.VroomlyApplication",
+            "projectName": "vroomly",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

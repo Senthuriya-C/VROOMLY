@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VROOMLY | Admin Dashboard</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Admin CSS -->
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= SIDEBAR ================= -->
+
+<aside class="sidebar">
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-icon">
+            <i class="fa-solid fa-car-side"></i>
+        </div>
+
+        <div>
+            VROOM<span>LY</span>
+            <small>SMART VEHICLE CARE</small>
+        </div>
+
+    </a>
+
+
+    <!-- ADMIN PROFILE -->
+
+    <div class="admin-profile">
+
+        <div class="admin-avatar">
+            <i class="fa-solid fa-user-shield"></i>
+        </div>
+
+        <div>
+
+            <strong>Administrator</strong>
+
+            <span>
+                <i class="fa-solid fa-circle"></i>
+                Online
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- MAIN MENU -->
+
+    <p class="menu-title">
+        MAIN MENU
+    </p>
+
+
+    <nav class="sidebar-menu">
+
+        <a href="#overview" class="active">
+
+            <i class="fa-solid fa-chart-pie"></i>
+
+            Overview
+
+        </a>
+
+
+        <a href="#bookings">
+
+            <i class="fa-solid fa-calendar-check"></i>
+
+            Bookings
+
+            <span class="menu-count">
+                3
+            </span>
+
+        </a>
+
+
+        <a href="#customers">
+
+            <i class="fa-solid fa-users"></i>
+
+            Customers
+
+        </a>
+
+
+        <a href="#vehicles">
+
+            <i class="fa-solid fa-car"></i>
+
+            Vehicles
+
+        </a>
+
+
+        <a href="#services">
+
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+
+            Services
+
+        </a>
+
+    </nav>
+
+
+    <!-- SYSTEM -->
+
+    <p class="menu-title">
+        SYSTEM
+    </p>
+
+
+    <nav class="sidebar-menu">
+
+        <a href="dashboard.html">
+
+            <i class="fa-solid fa-user"></i>
+
+            Customer View
+
+        </a>
+
+
+        <a href="#" onclick="logoutAdmin(event)">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Logout
+
+        </a>
+
+    </nav>
+
+
+    <!-- SUPPORT -->
+
+    <div class="sidebar-bottom">
+
+        <div class="support-box">
+
+            <i class="fa-solid fa-headset"></i>
+
+            <div>
+
+                <strong>
+                    Need Help?
+                </strong>
+
+                <span>
+                    Contact support
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<main class="main-content">
+
+
+    <!-- ================= TOP BAR ================= -->
+
+    <header class="topbar">
+
+        <div>
+
+            <span class="breadcrumb">
+                VROOMLY / ADMIN
+            </span>
+
+            <h1>
+                Admin Overview
+            </h1>
+
+        </div>
+
+
+        <div class="top-actions">
+
+            <button class="notification-btn">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <span>
+                    3
+                </span>
+
+            </button>
+
+
+            <div class="top-admin">
+
+                <div class="top-avatar">
+                    A
+                </div>
+
+                <div>
+
+                    <strong>
+                        Admin
+                    </strong>
+
+                    <small>
+                        Administrator
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= OVERVIEW ================= -->
+
+    <section id="overview">
+
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    LIVE OVERVIEW
+                </span>
+
+                <h2>
+                    System at a glance
+                </h2>
+
+            </div>
+
+
+            <span class="live-status">
+
+                <i class="fa-solid fa-circle"></i>
+
+                Live System
+
+            </span>
+
+        </div>
+
+
+
+        <!-- ================= STAT CARDS ================= -->
+
+        <div class="stats-grid">
+
+
+            <!-- TOTAL BOOKINGS -->
+
+            <div class="stat-card purple">
+
+                <div class="stat-card-top">
+
+                    <div class="stat-icon">
+
+                        <i class="fa-solid fa-calendar-check"></i>
+
+                    </div>
+
+                    <span class="growth">
+                        +12%
+                    </span>
+
+                </div>
+
+
+                <span class="stat-title">
+                    Total Bookings
+                </span>
+
+
+                <strong class="stat-number">
+                    128
+                </strong>
+
+
+                <p>
+                    Compared with last month
+                </p>
+
+            </div>
+
+
+
+            <!-- TOTAL CUSTOMERS -->
+
+            <div class="stat-card blue">
+
+                <div class="stat-card-top">
+
+                    <div class="stat-icon">
+
+                        <i class="fa-solid fa-users"></i>
+
+                    </div>
+
+                    <span class="growth">
+                        +8%
+                    </span>
+
+                </div>
+
+
+                <span class="stat-title">
+                    Total Customers
+                </span>
+
+
+                <strong class="stat-number">
+                    84
+                </strong>
+
+
+                <p>
+                    Registered users
+                </p>
+
+            </div>
+
+
+
+            <!-- VEHICLES -->
+
+            <div class="stat-card pink">
+
+                <div class="stat-card-top">
+
+                    <div class="stat-icon">
+
+                        <i class="fa-solid fa-car"></i>
+
+                    </div>
+
+                    <span class="growth">
+                        +5%
+                    </span>
+
+                </div>
+
+
+                <span class="stat-title">
+                    Vehicles
+                </span>
+
+
+                <strong class="stat-number">
+                    97
+                </strong>
+
+
+                <p>
+                    Vehicles registered
+                </p>
+
+            </div>
+
+
+
+            <!-- REVENUE -->
+
+            <div class="stat-card green">
+
+                <div class="stat-card-top">
+
+                    <div class="stat-icon">
+
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                    </div>
+
+                    <span class="growth">
+                        +18%
+                    </span>
+
+                </div>
+
+
+                <span class="stat-title">
+                    Revenue
+                </span>
+
+
+                <strong class="stat-number">
+                    ₹2.84L
+                </strong>
+
+
+                <p>
+                    This month
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= BOOKING + SERVICES ================= -->
+
+    <section class="dashboard-grid">
+
+
+        <!-- ================= RECENT BOOKINGS ================= -->
+
+        <div
+            class="panel bookings-panel"
+            id="bookings">
+
+
+            <div class="panel-header">
+
+                <div>
+
+                    <span class="section-label">
+                        BOOKING MANAGEMENT
+                    </span>
+
+                    <h2>
+                        Recent Bookings
+                    </h2>
+
+                </div>
+
+
+                <button
+                    class="filter-btn"
+                    onclick="filterBookings()">
+
+                    <i class="fa-solid fa-filter"></i>
+
+                    Filter
+
+                </button>
+
+            </div>
+
+
+
+            <!-- BOOKING LIST -->
+
+            <div class="booking-list">
+
+
+                <!-- BOOKING 1 -->
+
+                <div class="booking-row">
+
+                    <div class="customer-avatar purple-avatar">
+                        AK
+                    </div>
+
+
+                    <div class="booking-info">
+
+                        <strong>
+                            Arun Kumar
+                        </strong>
+
+                        <span>
+                            Full Service • Toyota
+                        </span>
+
+                    </div>
+
+
+                    <div class="booking-date">
+
+                        <strong>
+                            18 Sep
+                        </strong>
+
+                        <span>
+                            10:30 AM
+                        </span>
+
+                    </div>
+
+
+                    <span class="status pending">
+                        Pending
+                    </span>
+
+
+                    <button class="more-btn">
+
+                        <i class="fa-solid fa-ellipsis"></i>
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- BOOKING 2 -->
+
+                <div class="booking-row">
+
+                    <div class="customer-avatar blue-avatar">
+                        SP
+                    </div>
+
+
+                    <div class="booking-info">
+
+                        <strong>
+                            Sarah Priya
+                        </strong>
+
+                        <span>
+                            AC Service • Hyundai
+                        </span>
+
+                    </div>
+
+
+                    <div class="booking-date">
+
+                        <strong>
+                            18 Sep
+                        </strong>
+
+                        <span>
+                            02:00 PM
+                        </span>
+
+                    </div>
+
+
+                    <span class="status confirmed">
+                        Confirmed
+                    </span>
+
+
+                    <button class="more-btn">
+
+                        <i class="fa-solid fa-ellipsis"></i>
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- BOOKING 3 -->
+
+                <div class="booking-row">
+
+                    <div class="customer-avatar pink-avatar">
+                        RM
+                    </div>
+
+
+                    <div class="booking-info">
+
+                        <strong>
+                            Rahul M
+                        </strong>
+
+                        <span>
+                            Oil Change • Honda
+                        </span>
+
+                    </div>
+
+
+                    <div class="booking-date">
+
+                        <strong>
+                            19 Sep
+                        </strong>
+
+                        <span>
+                            09:00 AM
+                        </span>
+
+                    </div>
+
+
+                    <span class="status completed">
+                        Completed
+                    </span>
+
+
+                    <button class="more-btn">
+
+                        <i class="fa-solid fa-ellipsis"></i>
+
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- VIEW ALL BOOKINGS -->
+
+            <button
+                class="view-bookings"
+                onclick="viewAllBookings()">
+
+                View All Bookings
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ================= SERVICES ================= -->
+
+        <div
+            class="panel services-panel"
+            id="services">
+
+
+            <div class="panel-header">
+
+                <div>
+
+                    <span class="section-label">
+                        SERVICES
+                    </span>
+
+                    <h2>
+                        Popular Services
+                    </h2>
+
+                </div>
+
+
+                <!-- ADD SERVICE -->
+
+                <button
+                    class="add-btn"
+                    onclick="addService()">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- SERVICE 1 -->
+
+            <div class="service-stat">
+
+                <div class="service-icon purple-icon">
+
+                    <i class="fa-solid fa-oil-can"></i>
+
+                </div>
+
+
+                <div class="service-name">
+
+                    <strong>
+                        Oil Change
+                    </strong>
+
+                    <span>
+                        42 bookings
+                    </span>
+
+                </div>
+
+
+                <strong>
+                    ₹799
+                </strong>
+
+            </div>
+
+
+
+            <!-- SERVICE 2 -->
+
+            <div class="service-stat">
+
+                <div class="service-icon blue-icon">
+
+                    <i class="fa-solid fa-car"></i>
+
+                </div>
+
+
+                <div class="service-name">
+
+                    <strong>
+                        Full Service
+                    </strong>
+
+                    <span>
+                        31 bookings
+                    </span>
+
+                </div>
+
+
+                <strong>
+                    ₹2,499
+                </strong>
+
+            </div>
+
+
+
+            <!-- SERVICE 3 -->
+
+            <div class="service-stat">
+
+                <div class="service-icon pink-icon">
+
+                    <i class="fa-solid fa-spray-can-sparkles"></i>
+
+                </div>
+
+
+                <div class="service-name">
+
+                    <strong>
+                        Premium Car Wash
+                    </strong>
+
+                    <span>
+                        27 bookings
+                    </span>
+
+                </div>
+
+
+                <strong>
+                    ₹599
+                </strong>
+
+            </div>
+
+
+
+            <!-- SERVICE 4 -->
+
+            <div class="service-stat">
+
+                <div class="service-icon green-icon">
+
+                    <i class="fa-solid fa-fan"></i>
+
+                </div>
+
+
+                <div class="service-name">
+
+                    <strong>
+                        AC Service
+                    </strong>
+
+                    <span>
+                        18 bookings
+                    </span>
+
+                </div>
+
+
+                <strong>
+                    ₹1,299
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ================= CUSTOMER + VEHICLE ================= -->
+
+    <section class="management-grid">
+
+
+        <!-- ================= CUSTOMERS ================= -->
+
+        <div
+            class="panel"
+            id="customers">
+
+
+            <div class="panel-header">
+
+                <div>
+
+                    <span class="section-label">
+                        CUSTOMER MANAGEMENT
+                    </span>
+
+                    <h2>
+                        Recent Customers
+                    </h2>
+
+                </div>
+
+
+                <button
+                    class="outline-btn"
+                    onclick="manageCustomers()">
+
+                    Manage
+
+                </button>
+
+            </div>
+
+
+
+            <div class="customer-list">
+
+
+                <!-- CUSTOMER 1 -->
+
+                <div class="customer-row">
+
+                    <div class="customer-avatar purple-avatar">
+                        AK
+                    </div>
+
+
+                    <div class="customer-details">
+
+                        <strong>
+                            Arun Kumar
+                        </strong>
+
+                        <span>
+                            arun@example.com
+                        </span>
+
+                    </div>
+
+
+                    <span class="vehicle-count">
+                        2 Vehicles
+                    </span>
+
+                </div>
+
+
+
+                <!-- CUSTOMER 2 -->
+
+                <div class="customer-row">
+
+                    <div class="customer-avatar blue-avatar">
+                        SP
+                    </div>
+
+
+                    <div class="customer-details">
+
+                        <strong>
+                            Sarah Priya
+                        </strong>
+
+                        <span>
+                            sarah@example.com
+                        </span>
+
+                    </div>
+
+
+                    <span class="vehicle-count">
+                        1 Vehicle
+                    </span>
+
+                </div>
+
+
+
+                <!-- CUSTOMER 3 -->
+
+                <div class="customer-row">
+
+                    <div class="customer-avatar pink-avatar">
+                        RM
+                    </div>
+
+
+                    <div class="customer-details">
+
+                        <strong>
+                            Rahul M
+                        </strong>
+
+                        <span>
+                            rahul@example.com
+                        </span>
+
+                    </div>
+
+
+                    <span class="vehicle-count">
+                        1 Vehicle
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= VEHICLES ================= -->
+
+        <div
+            class="panel"
+            id="vehicles">
+
+
+            <div class="panel-header">
+
+                <div>
+
+                    <span class="section-label">
+                        VEHICLE MANAGEMENT
+                    </span>
+
+                    <h2>
+                        Registered Vehicles
+                    </h2>
+
+                </div>
+
+
+                <button
+                    class="outline-btn"
+                    onclick="manageVehicles()">
+
+                    Manage
+
+                </button>
+
+            </div>
+
+
+
+            <div class="vehicle-stat-grid">
+
+
+                <!-- CARS -->
+
+                <div class="vehicle-stat-card">
+
+                    <i class="fa-solid fa-car"></i>
+
+                    <strong>
+                        68
+                    </strong>
+
+                    <span>
+                        Cars
+                    </span>
+
+                </div>
+
+
+
+                <!-- BIKES -->
+
+                <div class="vehicle-stat-card">
+
+                    <i class="fa-solid fa-motorcycle"></i>
+
+                    <strong>
+                        29
+                    </strong>
+
+                    <span>
+                        Bikes
+                    </span>
+
+                </div>
+
+
+
+                <!-- ACTIVE -->
+
+                <div class="vehicle-stat-card">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    <strong>
+                        91
+                    </strong>
+
+                    <span>
+                        Active
+                    </span>
+
+                </div>
+
+
+
+                <!-- IN SERVICE -->
+
+                <div class="vehicle-stat-card">
+
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                    <strong>
+                        6
+                    </strong>
+
+                    <span>
+                        In Service
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- VEHICLE PROGRESS -->
+
+            <div class="vehicle-progress">
+
+                <div class="progress-info">
+
+                    <span>
+                        Vehicle utilization
+                    </span>
+
+                    <strong>
+                        72%
+                    </strong>
+
+                </div>
+
+
+                <div class="progress-bar">
+
+                    <span></span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ================= QUICK ACTIONS ================= -->
+
+    <section class="quick-actions">
+
+
+        <div class="quick-heading">
+
+            <span class="section-label">
+                QUICK ACTIONS
+            </span>
+
+            <h2>
+                Manage VROOMLY
+            </h2>
+
+        </div>
+
+
+
+        <div class="quick-grid">
+
+
+            <!-- ADD SERVICE -->
+
+            <button
+                onclick="addService()"
+                class="quick-card">
+
+                <div class="quick-icon purple-icon">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </div>
+
+                <strong>
+                    Add Service
+                </strong>
+
+                <span>
+                    Create a new service
+                </span>
+
+            </button>
+
+
+
+            <!-- CUSTOMERS -->
+
+            <button
+                onclick="manageCustomers()"
+                class="quick-card">
+
+                <div class="quick-icon blue-icon">
+
+                    <i class="fa-solid fa-user-plus"></i>
+
+                </div>
+
+                <strong>
+                    Customers
+                </strong>
+
+                <span>
+                    Manage customer accounts
+                </span>
+
+            </button>
+
+
+
+            <!-- BOOKINGS -->
+
+            <button
+                onclick="viewAllBookings()"
+                class="quick-card">
+
+                <div class="quick-icon pink-icon">
+
+                    <i class="fa-solid fa-calendar"></i>
+
+                </div>
+
+                <strong>
+                    Bookings
+                </strong>
+
+                <span>
+                    Manage service bookings
+                </span>
+
+            </button>
+
+
+
+            <!-- REPORTS -->
+
+            <button
+                onclick="generateReport()"
+                class="quick-card">
+
+                <div class="quick-icon green-icon">
+
+                    <i class="fa-solid fa-file-chart-column"></i>
+
+                </div>
+
+                <strong>
+                    Reports
+                </strong>
+
+                <span>
+                    View system reports
+                </span>
+
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    © 2026 VROOMLY — Smart Vehicle Care
+
+</footer>
+
+
+
+<!-- ================= ADMIN JAVASCRIPT ================= -->
+
+<script src="admin.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>VROOMLY | Login</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- VROOMLY CSS -->
+    <link rel="stylesheet" href="auth.css">
+
+</head>
+
+
+<body>
+
+
+<!-- Background glow -->
+
+<div class="auth-glow glow-purple"></div>
+
+<div class="auth-glow glow-pink"></div>
+
+
+
+<!-- ================= MAIN PAGE ================= -->
+
+<div class="auth-page">
+
+
+    <!-- ================= LEFT SIDE ================= -->
+
+    <section class="auth-intro">
+
+
+        <!-- LOGO -->
+
+        <a href="index.html"
+           class="auth-logo">
+
+            <div class="auth-logo-icon">
+
+                <i class="fa-solid fa-car-side"></i>
+
+            </div>
+
+
+            <div class="auth-logo-text">
+
+                VROOM<span>LY</span>
+
+            </div>
+
+        </a>
+
+
+
+        <!-- BACK HOME -->
+
+        <a href="index.html"
+           class="back-home">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Back to Home
+
+        </a>
+
+
+
+        <!-- INTRO -->
+
+        <div class="intro-content">
+
+
+            <div class="intro-label">
+
+                <span></span>
+
+                WELCOME BACK
+
+            </div>
+
+
+            <h1>
+
+                Your Vehicle.
+
+                <br>
+
+                <span>Your Journey.</span>
+
+            </h1>
+
+
+            <p>
+
+                Sign in to manage your vehicles,
+                book services and track your service
+                history effortlessly.
+
+            </p>
+
+
+
+            <!-- BENEFITS -->
+
+            <div class="benefits">
+
+
+                <!-- Benefit 1 -->
+
+                <div class="benefit">
+
+                    <div class="benefit-icon purple">
+
+                        <i class="fa-solid fa-calendar-check"></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Easy Service Booking
+                        </strong>
+
+                        <span>
+                            Book your service in a few clicks
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Benefit 2 -->
+
+                <div class="benefit">
+
+                    <div class="benefit-icon blue">
+
+                        <i class="fa-solid fa-car"></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Manage Your Vehicles
+                        </strong>
+
+                        <span>
+                            Keep all your vehicle details organized
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Benefit 3 -->
+
+                <div class="benefit">
+
+                    <div class="benefit-icon pink">
+
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Track Service History
+                        </strong>
+
+                        <span>
+                            View your previous service records
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Decorative car -->
+
+        <div class="intro-car">
+
+            <i class="fa-solid fa-car-side"></i>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ================= RIGHT SIDE ================= -->
+
+    <section class="auth-form-section">
+
+
+        <!-- LOGIN CARD -->
+
+        <div class="auth-card">
+
+
+            <!-- HEADER -->
+
+            <div class="form-header">
+
+
+                <div class="form-icon">
+
+                    <i class="fa-solid fa-right-to-bracket"></i>
+
+                </div>
+
+
+                <h2>
+                    Welcome Back
+                </h2>
+
+
+                <p>
+                    Login to your VROOMLY account
+                </p>
+
+
+            </div>
+
+
+
+            <!-- LOGIN FORM -->
+
+            <form id="loginForm">
+
+
+                <!-- EMAIL -->
+
+                <div class="input-group">
+
+                    <label for="loginEmail">
+                        Email Address
+                    </label>
+
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+
+                        <input
+                            type="email"
+                            id="loginEmail"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PASSWORD -->
+
+                <div class="input-group">
+
+                    <label for="loginPassword">
+                        Password
+                    </label>
+
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-solid fa-lock"></i>
+
+
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            onclick="togglePassword('loginPassword', this)"
+                        >
+
+                            <i class="fa-regular fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- REMEMBER -->
+
+                <div class="terms">
+
+                    <input
+                        type="checkbox"
+                        id="rememberMe"
+                    >
+
+                    <label for="rememberMe">
+                        Remember me
+                    </label>
+
+
+                    <a href="#"
+                       onclick="forgotPassword(event)">
+
+                        Forgot Password?
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- LOGIN BUTTON -->
+
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+
+                    Login to VROOMLY
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+            </form>
+
+
+
+            <!-- REGISTER -->
+
+            <div class="switch-auth">
+
+                Don't have an account?
+
+                <a href="register.html">
+
+                    Create Account
+
+                </a>
+
+            </div>
+
+
+
+            <!-- SECURITY -->
+
+            <div class="secure-note">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                Your account information is securely protected.
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+</div>
+
+
+
+<!-- JavaScript -->
+
+<script src="auth.js"></script>
+
+</body>
+
+</html>

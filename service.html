@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VROOMLY | Services</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="service.css">
+</head>
+
+<body>
+
+<!-- Background effects -->
+<div class="bg-glow glow-one"></div>
+<div class="bg-glow glow-two"></div>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-icon">
+            <i class="fa-solid fa-car-side"></i>
+        </div>
+
+        <div class="logo-text">
+            VROOM<span>LY</span>
+        </div>
+
+    </a>
+
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="service.html" class="active">
+            Services
+        </a>
+
+        <a href="booking.html">
+            Booking
+        </a>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+    </div>
+
+
+    <a href="login.html" class="login-btn">
+
+        <i class="fa-regular fa-user"></i>
+
+        Login
+
+    </a>
+
+</nav>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="service-hero">
+
+    <div class="hero-content">
+
+        <div class="hero-label">
+
+            <span></span>
+
+            PROFESSIONAL VEHICLE CARE
+
+        </div>
+
+
+        <h1>
+            Give Your Vehicle
+            <br>
+            <span>The Care It Deserves.</span>
+        </h1>
+
+
+        <p>
+            From routine maintenance to complete vehicle care,
+            discover reliable services designed to keep your
+            journey smooth and safe.
+        </p>
+
+
+        <div class="hero-stats">
+
+            <div>
+                <strong>20+</strong>
+                <span>Services</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <div>
+                <strong>4.8★</strong>
+                <span>Average Rating</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <div>
+                <strong>24/7</strong>
+                <span>Booking</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-car">
+
+        <div class="circle circle-one"></div>
+        <div class="circle circle-two"></div>
+
+        <div class="car-icon">
+            <i class="fa-solid fa-car-side"></i>
+        </div>
+
+        <div class="floating-tag tag-one">
+            <i class="fa-solid fa-shield-halved"></i>
+            Trusted Care
+        </div>
+
+        <div class="floating-tag tag-two">
+            <i class="fa-solid fa-bolt"></i>
+            Quick Service
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= SERVICE SECTION ================= -->
+
+<section class="services-section">
+
+
+    <div class="section-heading">
+
+        <div>
+
+            <span>EXPLORE SERVICES</span>
+
+            <h2>
+                Everything Your Vehicle Needs
+            </h2>
+
+        </div>
+
+
+        <p>
+            Choose a service and book your appointment
+            in just a few clicks.
+        </p>
+
+    </div>
+
+
+
+    <!-- SEARCH -->
+
+    <div class="service-tools">
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="serviceSearch"
+                placeholder="Search for a service..."
+            >
+
+        </div>
+
+
+        <div class="filter-buttons">
+
+            <button class="filter active"
+                    data-category="all">
+                All
+            </button>
+
+            <button class="filter"
+                    data-category="maintenance">
+                Maintenance
+            </button>
+
+            <button class="filter"
+                    data-category="cleaning">
+                Cleaning
+            </button>
+
+            <button class="filter"
+                    data-category="repair">
+                Repair
+            </button>
+
+            <button class="filter"
+                    data-category="inspection">
+                Inspection
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- SERVICE GRID -->
+
+    <div class="service-grid" id="serviceGrid">
+
+
+        <!-- 1 -->
+
+        <div class="service-card"
+             data-category="maintenance"
+             data-name="Oil Change">
+
+            <div class="service-top">
+
+                <div class="service-icon purple">
+                    <i class="fa-solid fa-oil-can"></i>
+                </div>
+
+                <span class="service-badge">
+                    POPULAR
+                </span>
+
+            </div>
+
+
+            <h3>
+                Oil Change
+            </h3>
+
+            <p>
+                Replace old engine oil with quality
+                oil for smoother performance.
+            </p>
+
+
+            <div class="service-info">
+
+                <span>
+                    <i class="fa-regular fa-clock"></i>
+                    45 min
+                </span>
+
+                <strong>
+                    ₹799
+                </strong>
+
+            </div>
+
+
+            <a href="booking.html?service=Oil%20Change"
+               class="book-btn">
+
+                Book Now
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- 2 -->
+
+        <div class="service-card"
+             data-category="maintenance"
+             data-name="Full Service">
+
+            <div class="service-top">
+
+                <div class="service-icon blue">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+
+                <span class="service-badge blue-badge">
+                    COMPLETE
+                </span>
+
+            </div>
+
+
+            <h3>
+                Full Service
+            </h3>
+
+            <p>
+                Complete vehicle maintenance including
+                essential checks and adjustments.
+            </p>
+
+
+            <div class="service-info">
+
+                <span>
+                    <i class="fa-regular fa-clock"></i>
+                    2.5 hrs
+                </span>
+
+                <strong>
+                    ₹2,499
+                </strong>
+
+            </div>
+
+
+            <a href="booking.html?service=Full%20Service"
+               class="book-btn">
+
+                Book Now
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- 3 -->
+
+        <div class="service-card"
+             data-category="cleaning"
+             data-name="Premium Car Wash">
+
+            <div class="service-top">
+
+                <div class="service-icon cyan">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+
+                <span class="service-badge cyan-badge">
+                    QUICK
+                </span>
+
+            </div>
+
+
+            <h3>
+                Premium Car Wash
+            </h3>
+
+            <p>
+                Exterior wash, interior cleaning and
+                finishing for a fresh look.
+            </p>
+
+
+            <div class="service-info">
+
+                <span>
+                    <i class="fa-regular fa-clock"></i>
+                    60 min
+                </span>
+
+                <strong>
+                    ₹599
+                </strong>
+
+            </div>
+
+
+            <a href="booking.html?service=Premium%20Car%20Wash"
+               class="book-btn">
+
+                Book Now
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- 4 -->
+
+        <div class="service-card"
+             data-category="repair"
+             data-name="Brake Service">
+
+            <div class="service-top">
+
+                <div class="service-icon pink">
+                    <i class="fa-solid fa-circle-stop"></i>
+                </div>
+
+                <span class="service-badge pink-badge">
+                    SAFETY
+                </span>
+
+            </div>
+
+
+            <h3>
+                Brake Service
+            </h3>
+
+            <p>
+                Brake inspection and maintenance to
+                support safe driving.
+            </p>
+
+
+            <div class="service-info">
+
+                <span>
+                    <i class="fa-regular fa-clock"></i>
+                    90 min
+                </span>
+
+                <strong>
+                    ₹1,499
+                </strong>
+
+            </div>
+
+
+            <a href="booking.html?service=Brake%20Service"
+               class="book-btn">
+
+                Book Now
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- 5 -->
+
+        <div class="service-card"
+             data-category="maintenance"
+             data-name="AC Service">
+
+            <div class="service-top">
+
+                <div class="service-icon orange">
+                    <i class="fa-solid fa-snowflake"></i>
+                </div>
+
+            </div>
+
+
+            <h3>
+                AC Service
+            </h3>
+
+            <p>
+                AC inspection, cleaning and performance
+                check for comfortable journeys.
+            </p>
+
+
+            <div class="service-info">
+
+                <span>
+                    <i class="fa-regular fa-clock"></i>
+                    90 min
+                </span>
+
+                <strong>
+                    ₹1,299
+                </strong>
+
+            </div>
+
+
+            <a href="booking.html?service=AC%20Service"
+               class="book-btn">
+
+                Book Now
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- 6 -->
+
+        <div class="service-card"
+             data-category="inspection"
+             data-name="Vehicle Inspection">
+
+            <div class="service-top">
+
+                <div class="service-icon green">
+                    <i class="fa-solid fa-car-burst"></i>
+                </div>
+
+                <span class="service-badge green-badge">
+                    CHECK
+                </span>
+
+            </div>
+
+
+            <h3>
+                Vehicle Inspection
+            </h3>
+
+            <p>
+                Detailed inspection of important vehicle
+                components and systems.
+            </p>
+
+
+            <div class="service-info">
+
+                <span>
+                    <i class="fa-regular fa-clock"></i>
+                    45 min
+                </span>
+
+                <strong>
+                    ₹499
+                </strong>
+
+            </div>
+
+
+            <a href="booking.html?service=Vehicle%20Inspection"
+               class="book-btn">
+
+                Book Now
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- 7 -->
+
+        <div class="service-card"
+             data-category="repair"
+             data-name="Battery Service">
+
+            <div class="service-top">
+
+                <div class="service-icon yellow">
+                    <i class="fa-solid fa-car-battery"></i>
+                </div>
+
+            </div>
+
+
+            <h3>
+                Battery Service
+            </h3>
+
+            <p>
+                Battery health check and basic electrical
+                system inspection.
+            </p>
+
+
+            <div class="service-info">
+
+                <span>
+                    <i class="fa-regular fa-clock"></i>
+                    40 min
+                </span>
+
+                <strong>
+                    ₹699
+                </strong>
+
+            </div>
+
+
+            <a href="booking.html?service=Battery%20Service"
+               class="book-btn">
+
+                Book Now
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- 8 -->
+
+        <div class="service-card"
+             data-category="cleaning"
+             data-name="Interior Detailing">
+
+            <div class="service-top">
+
+                <div class="service-icon violet">
+                    <i class="fa-solid fa-spray-can-sparkles"></i>
+                </div>
+
+            </div>
+
+
+            <h3>
+                Interior Detailing
+            </h3>
+
+            <p>
+                Deep interior cleaning for seats,
+                dashboard and cabin surfaces.
+            </p>
+
+
+            <div class="service-info">
+
+                <span>
+                    <i class="fa-regular fa-clock"></i>
+                    2 hrs
+                </span>
+
+                <strong>
+                    ₹1,199
+                </strong>
+
+            </div>
+
+
+            <a href="booking.html?service=Interior%20Detailing"
+               class="book-btn">
+
+                Book Now
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- NO RESULTS -->
+
+    <div id="noResults" class="no-results">
+
+        <i class="fa-solid fa-car-side"></i>
+
+        <h3>
+            No services found
+        </h3>
+
+        <p>
+            Try another search or category.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CTA ================= -->
+
+<section class="service-cta">
+
+    <div class="cta-icon">
+        <i class="fa-solid fa-calendar-check"></i>
+    </div>
+
+    <div>
+
+        <span>
+            READY TO GET STARTED?
+        </span>
+
+        <h2>
+            Your vehicle deserves better care.
+        </h2>
+
+        <p>
+            Pick a service and schedule your appointment today.
+        </p>
+
+    </div>
+
+
+    <a href="booking.html">
+
+        Book a Service
+
+        <i class="fa-solid fa-arrow-right"></i>
+
+    </a>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-car-side"></i>
+            </div>
+
+            <div class="logo-text">
+                VROOM<span>LY</span>
+            </div>
+
+        </div>
+
+        <p>
+            Smart vehicle care, made simple.
+        </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="service.html">Services</a>
+
+        <a href="booking.html">Booking</a>
+
+        <a href="dashboard.html">Dashboard</a>
+
+    </div>
+
+
+    <p class="copyright">
+        © 2026 VROOMLY. All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="service.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VROOMLY | Book Service</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="booking.css">
+</head>
+
+
+<body>
+
+
+<!-- ==========================================
+     BACKGROUND GLOW
+     ========================================== -->
+
+<div class="glow glow-one"></div>
+<div class="glow glow-two"></div>
+<div class="glow glow-three"></div>
+
+
+
+<!-- ==========================================
+     NAVBAR
+     ========================================== -->
+
+<nav class="navbar">
+
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-icon">
+            <i class="fa-solid fa-car-side"></i>
+        </div>
+
+        <span>
+            VROOM<span>LY</span>
+        </span>
+
+    </a>
+
+
+
+    <div class="nav-links">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="service.html">
+            Services
+        </a>
+
+        <a href="booking.html" class="active">
+            Booking
+        </a>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+    </div>
+
+
+
+    <a href="login.html" class="login-link">
+
+        <i class="fa-regular fa-user"></i>
+
+        Login
+
+    </a>
+
+</nav>
+
+
+
+<!-- ==========================================
+     PAGE HEADER
+     ========================================== -->
+
+<section class="page-header">
+
+    <div class="small-label">
+
+        <span></span>
+
+        VROOMLY SERVICE BOOKING
+
+    </div>
+
+
+    <h1>
+        Book Your
+        <span>Service.</span>
+    </h1>
+
+
+    <p>
+        Keep your vehicle running smoothly with professional
+        service from VROOMLY.
+    </p>
+
+</section>
+
+
+
+<!-- ==========================================
+     MAIN BOOKING AREA
+     ========================================== -->
+
+<main class="booking-container">
+
+
+    <!-- ======================================
+         LEFT FORM
+         ====================================== -->
+
+    <section class="booking-form-card">
+
+
+        <!-- PROGRESS -->
+
+        <div class="progress-section">
+
+            <div class="progress-text">
+
+                <span>
+                    BOOKING DETAILS
+                </span>
+
+                <strong>
+                    Step 1 of 1
+                </strong>
+
+            </div>
+
+
+            <div class="progress-bar">
+
+                <span></span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ==================================
+             VEHICLE SECTION
+             ================================== -->
+
+        <div class="form-section">
+
+
+            <div class="section-title">
+
+                <div class="title-icon purple">
+                    <i class="fa-solid fa-car"></i>
+                </div>
+
+                <div>
+
+                    <span>
+                        STEP 01
+                    </span>
+
+                    <h2>
+                        Select Your Vehicle
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="vehicle-options">
+
+
+                <!-- CAR -->
+
+                <div class="vehicle-option selected"
+                     data-vehicle="My Car">
+
+                    <div class="vehicle-option-icon">
+
+                        <i class="fa-solid fa-car-side"></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            My Car
+                        </strong>
+
+                        <span>
+                            Four Wheeler
+                        </span>
+
+                    </div>
+
+                    <div class="check-icon">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                </div>
+
+
+
+                <!-- BIKE -->
+
+                <div class="vehicle-option"
+                     data-vehicle="My Bike">
+
+                    <div class="vehicle-option-icon">
+
+                        <i class="fa-solid fa-motorcycle"></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            My Bike
+                        </strong>
+
+                        <span>
+                            Two Wheeler
+                        </span>
+
+                    </div>
+
+                    <div class="check-icon">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- VEHICLE NUMBER -->
+
+            <div class="input-group">
+
+
+                <label for="vehicleNumber">
+
+                    Vehicle Number Plate
+
+                    <span>
+                        *
+                    </span>
+
+                </label>
+
+
+                <div class="input-wrapper">
+
+                    <i class="fa-solid fa-id-card"></i>
+
+                    <input
+                        type="text"
+                        id="vehicleNumber"
+                        placeholder="Example: TN 49 AB 1234"
+                        maxlength="15"
+                        autocomplete="off"
+                        required
+                    >
+
+                </div>
+
+
+                <small class="input-help">
+
+                    Enter your registered vehicle number.
+
+                </small>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ==================================
+             SERVICE SECTION
+             ================================== -->
+
+        <div class="form-section">
+
+
+            <div class="section-title">
+
+                <div class="title-icon blue">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+
+                <div>
+
+                    <span>
+                        STEP 02
+                    </span>
+
+                    <h2>
+                        Choose a Service
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="input-group">
+
+
+                <label for="service">
+
+                    Service
+
+                    <span>
+                        *
+                    </span>
+
+                </label>
+
+
+                <div class="input-wrapper select-wrapper">
+
+                    <i class="fa-solid fa-wrench"></i>
+
+                    <select id="service" required>
+
+                        <option value="">
+                            Select a service
+                        </option>
+
+                        <option value="Oil Change"
+                                data-price="799">
+                            Oil Change — ₹799
+                        </option>
+
+                        <option value="Full Service"
+                                data-price="2499">
+                            Full Service — ₹2,499
+                        </option>
+
+                        <option value="Premium Car Wash"
+                                data-price="599">
+                            Premium Car Wash — ₹599
+                        </option>
+
+                        <option value="Brake Service"
+                                data-price="1499">
+                            Brake Service — ₹1,499
+                        </option>
+
+                        <option value="AC Service"
+                                data-price="1299">
+                            AC Service — ₹1,299
+                        </option>
+
+                        <option value="Vehicle Inspection"
+                                data-price="499">
+                            Vehicle Inspection — ₹499
+                        </option>
+
+                        <option value="Battery Service"
+                                data-price="699">
+                            Battery Service — ₹699
+                        </option>
+
+                        <option value="Interior Detailing"
+                                data-price="1199">
+                            Interior Detailing — ₹1,199
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ==================================
+             DATE & TIME
+             ================================== -->
+
+        <div class="form-section">
+
+
+            <div class="section-title">
+
+                <div class="title-icon pink">
+                    <i class="fa-regular fa-calendar"></i>
+                </div>
+
+                <div>
+
+                    <span>
+                        STEP 03
+                    </span>
+
+                    <h2>
+                        Choose Date & Time
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="two-column">
+
+
+                <div class="input-group">
+
+                    <label for="date">
+
+                        Service Date
+
+                        <span>*</span>
+
+                    </label>
+
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        <input
+                            type="date"
+                            id="date"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="input-group">
+
+                    <label for="time">
+
+                        Preferred Time
+
+                        <span>*</span>
+
+                    </label>
+
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-regular fa-clock"></i>
+
+                        <select id="time" required>
+
+                            <option value="">
+                                Select time
+                            </option>
+
+                            <option value="09:00 AM">
+                                09:00 AM
+                            </option>
+
+                            <option value="10:00 AM">
+                                10:00 AM
+                            </option>
+
+                            <option value="11:00 AM">
+                                11:00 AM
+                            </option>
+
+                            <option value="12:00 PM">
+                                12:00 PM
+                            </option>
+
+                            <option value="02:00 PM">
+                                02:00 PM
+                            </option>
+
+                            <option value="03:00 PM">
+                                03:00 PM
+                            </option>
+
+                            <option value="04:00 PM">
+                                04:00 PM
+                            </option>
+
+                            <option value="05:00 PM">
+                                05:00 PM
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ==================================
+             SERVICE CENTER
+             ================================== -->
+
+        <div class="form-section">
+
+
+            <div class="section-title">
+
+                <div class="title-icon green">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <div>
+
+                    <span>
+                        STEP 04
+                    </span>
+
+                    <h2>
+                        Select Service Center
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="input-group">
+
+
+                <label for="center">
+
+                    Service Center
+
+                    <span>
+                        *
+                    </span>
+
+                </label>
+
+
+                <div class="input-wrapper select-wrapper">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <select id="center" required>
+
+                        <option value="">
+                            Select service center
+                        </option>
+
+                        <option value="VROOMLY Central">
+                            VROOMLY Central
+                        </option>
+
+                        <option value="VROOMLY Premium">
+                            VROOMLY Premium
+                        </option>
+
+                        <option value="VROOMLY Express">
+                            VROOMLY Express
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ==================================
+             NOTES
+             ================================== -->
+
+        <div class="form-section">
+
+
+            <div class="section-title">
+
+                <div class="title-icon orange">
+                    <i class="fa-regular fa-note-sticky"></i>
+                </div>
+
+                <div>
+
+                    <span>
+                        OPTIONAL
+                    </span>
+
+                    <h2>
+                        Additional Notes
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="input-group">
+
+
+                <label for="notes">
+
+                    Notes for Service Team
+
+                </label>
+
+
+                <textarea
+                    id="notes"
+                    placeholder="Tell us about any specific issue or request..."
+                    rows="4"
+                ></textarea>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ==================================
+             CONFIRM BUTTON
+             ================================== -->
+
+        <button
+            type="button"
+            class="confirm-btn"
+            onclick="confirmBooking()"
+        >
+
+            <span>
+                Confirm Booking
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </button>
+
+
+    </section>
+
+
+
+    <!-- ======================================
+         RIGHT SUMMARY
+         ====================================== -->
+
+    <aside class="summary-card">
+
+
+        <div class="summary-header">
+
+            <div>
+
+                <span>
+                    BOOKING SUMMARY
+                </span>
+
+                <h2>
+                    Your Appointment
+                </h2>
+
+            </div>
+
+            <div class="summary-icon">
+
+                <i class="fa-solid fa-receipt"></i>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- VEHICLE SUMMARY -->
+
+        <div class="summary-vehicle">
+
+            <div class="summary-vehicle-icon"
+                 id="summaryVehicleIcon">
+
+                <i class="fa-solid fa-car-side"></i>
+
+            </div>
+
+            <div>
+
+                <span>
+                    VEHICLE
+                </span>
+
+                <strong id="summaryVehicle">
+                    My Car
+                </strong>
+
+                <small id="summaryPlate">
+                    Number plate not entered
+                </small>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="summary-divider"></div>
+
+
+
+        <!-- SERVICE -->
+
+        <div class="summary-row">
+
+            <div>
+
+                <span>
+                    SERVICE
+                </span>
+
+                <strong id="summaryService">
+                    Not selected
+                </strong>
+
+            </div>
+
+            <i class="fa-solid fa-wrench"></i>
+
+        </div>
+
+
+
+        <!-- DATE -->
+
+        <div class="summary-row">
+
+            <div>
+
+                <span>
+                    DATE
+                </span>
+
+                <strong id="summaryDate">
+                    Not selected
+                </strong>
+
+            </div>
+
+            <i class="fa-regular fa-calendar"></i>
+
+        </div>
+
+
+
+        <!-- TIME -->
+
+        <div class="summary-row">
+
+            <div>
+
+                <span>
+                    TIME
+                </span>
+
+                <strong id="summaryTime">
+                    Not selected
+                </strong>
+
+            </div>
+
+            <i class="fa-regular fa-clock"></i>
+
+        </div>
+
+
+
+        <!-- CENTER -->
+
+        <div class="summary-row">
+
+            <div>
+
+                <span>
+                    SERVICE CENTER
+                </span>
+
+                <strong id="summaryCenter">
+                    Not selected
+                </strong>
+
+            </div>
+
+            <i class="fa-solid fa-location-dot"></i>
+
+        </div>
+
+
+
+        <div class="summary-divider"></div>
+
+
+
+        <!-- PRICE -->
+
+        <div class="price-row">
+
+            <span>
+                Estimated Total
+            </span>
+
+            <strong id="summaryPrice">
+                ₹0
+            </strong>
+
+        </div>
+
+
+
+        <div class="secure-box">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <span>
+                Your booking information is securely stored.
+            </span>
+
+        </div>
+
+
+    </aside>
+
+
+</main>
+
+
+
+<!-- ==========================================
+     SUCCESS MODAL
+     ========================================== -->
+
+<div class="modal-overlay" id="successModal">
+
+
+    <div class="success-modal">
+
+
+        <button class="close-modal"
+                onclick="closeModal()">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <div class="success-icon">
+
+            <i class="fa-solid fa-check"></i>
+
+        </div>
+
+
+        <span class="success-label">
+            BOOKING CONFIRMED
+        </span>
+
+
+        <h2>
+            You're all set! 🎉
+        </h2>
+
+
+        <p>
+            Your vehicle service appointment has been
+            successfully booked.
+        </p>
+
+
+
+        <div class="booking-id-box">
+
+            <span>
+                BOOKING ID
+            </span>
+
+            <strong id="bookingId">
+                VRM000000
+            </strong>
+
+        </div>
+
+
+
+        <div class="success-details">
+
+            <div>
+
+                <span>Vehicle</span>
+
+                <strong id="successVehicle">
+                    -
+                </strong>
+
+            </div>
+
+            <div>
+
+                <span>Number Plate</span>
+
+                <strong id="successPlate">
+                    -
+                </strong>
+
+            </div>
+
+            <div>
+
+                <span>Service</span>
+
+                <strong id="successService">
+                    -
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <button
+            class="dashboard-btn"
+            onclick="goToDashboard()"
+        >
+
+            Go to Dashboard
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </button>
+
+
+    </div>
+
+</div>
+
+
+
+<footer>
+
+    <p>
+        © 2026 VROOMLY — Smart Vehicle Care
+    </p>
+
+</footer>
+
+
+
+<script src="booking.js"></script>
+
+</body>
+
+</html>

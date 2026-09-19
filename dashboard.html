@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>VROOMLY | Customer Dashboard</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet"
+          href="dashboard.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        <i class="fa-solid fa-car"></i>
+
+        <span>VROOMLY</span>
+
+    </div>
+
+
+    <div class="nav-links">
+
+        <a href="dashboard.html" class="active">
+
+            <i class="fa-solid fa-house"></i>
+
+            Dashboard
+
+        </a>
+
+
+        <a href="service.html">
+
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+
+            Services
+
+        </a>
+
+
+        <a href="booking.html">
+
+            <i class="fa-solid fa-calendar-check"></i>
+
+            Book Service
+
+        </a>
+
+
+        <a href="#"
+           onclick="logout(); return false;">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Logout
+
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =====================================================
+     MAIN DASHBOARD
+===================================================== -->
+
+<main class="dashboard-container">
+
+
+    <!-- =================================================
+         WELCOME
+    ================================================== -->
+
+    <section class="welcome-section">
+
+        <div class="welcome-content">
+
+            <span class="section-label">
+                CUSTOMER DASHBOARD
+            </span>
+
+            <h1>
+
+                Welcome back,
+
+                <span id="userName">
+                    Customer
+                </span>!
+
+            </h1>
+
+            <p>
+                Manage your vehicles, bookings and vehicle
+                services from one place.
+            </p>
+
+        </div>
+
+
+        <div class="welcome-icon">
+
+            <i class="fa-solid fa-car-side"></i>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         STATISTICS
+    ================================================== -->
+
+    <section class="stats-grid">
+
+
+        <!-- Total Bookings -->
+
+        <div class="stat-card">
+
+            <div class="stat-icon purple">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+            </div>
+
+
+            <div class="stat-content">
+
+                <span>
+                    TOTAL BOOKINGS
+                </span>
+
+                <strong id="totalBookings">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Upcoming Bookings -->
+
+        <div class="stat-card">
+
+            <div class="stat-icon blue">
+
+                <i class="fa-solid fa-clock"></i>
+
+            </div>
+
+
+            <div class="stat-content">
+
+                <span>
+                    UPCOMING BOOKINGS
+                </span>
+
+                <strong id="upcomingBookings">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Total Spending -->
+
+        <div class="stat-card">
+
+            <div class="stat-icon pink">
+
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+
+            </div>
+
+
+            <div class="stat-content">
+
+                <span>
+                    TOTAL SPENDING
+                </span>
+
+                <strong id="totalSpending">
+                    ₹0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+         UPCOMING BOOKING
+    ================================================== -->
+
+    <section class="panel">
+
+        <div class="panel-header">
+
+            <div>
+
+                <span class="panel-label">
+                    UPCOMING BOOKING
+                </span>
+
+                <h2>
+                    Your Next Service
+                </h2>
+
+            </div>
+
+
+            <div class="panel-header-icon">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+            </div>
+
+        </div>
+
+
+        <div id="upcomingContent">
+
+            <div class="empty-state">
+
+                <div class="empty-icon">
+
+                    <i class="fa-solid fa-calendar-xmark"></i>
+
+                </div>
+
+                <h3>
+                    No Upcoming Booking
+                </h3>
+
+                <p>
+                    You don't have any upcoming service bookings.
+                </p>
+
+                <a href="booking.html"
+                   class="primary-btn">
+
+                    <i class="fa-solid fa-calendar-plus"></i>
+
+                    Book a Service
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         VEHICLE OVERVIEW
+    ================================================== -->
+
+    <section class="panel">
+
+        <div class="panel-header">
+
+            <div>
+
+                <span class="panel-label">
+                    MY VEHICLE
+                </span>
+
+                <h2>
+                    Vehicle Overview
+                </h2>
+
+            </div>
+
+
+            <div class="panel-header-icon blue-icon">
+
+                <i class="fa-solid fa-car"></i>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="vehicle-overview">
+
+
+            <div class="vehicle-image">
+
+                <i class="fa-solid fa-car-side"></i>
+
+            </div>
+
+
+
+            <div class="vehicle-info">
+
+                <span>
+                    CURRENT VEHICLE
+                </span>
+
+                <h2 id="vehicleType">
+                    Car
+                </h2>
+
+
+                <div class="vehicle-status">
+
+                    <span class="status-dot"></span>
+
+                    Healthy
+
+                </div>
+
+            </div>
+
+
+
+            <div class="vehicle-actions">
+
+                <button
+                    class="vehicle-btn"
+                    onclick="openVehicleManager()">
+
+                    <i class="fa-solid fa-pen"></i>
+
+                    Manage Vehicle
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         VEHICLE MANAGEMENT
+    ================================================== -->
+
+    <section
+        class="panel vehicle-manager"
+        id="vehicleManager"
+        style="display: none;">
+
+
+        <div class="panel-header">
+
+            <div>
+
+                <span class="panel-label">
+                    VEHICLE MANAGEMENT
+                </span>
+
+                <h2>
+                    Manage Your Vehicles
+                </h2>
+
+            </div>
+
+
+            <div class="panel-header-icon blue-icon">
+
+                <i class="fa-solid fa-car"></i>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Vehicle List -->
+
+        <div id="vehicleList"
+             class="vehicle-list">
+
+            <p class="loading-text">
+                Loading vehicles...
+            </p>
+
+        </div>
+
+
+
+        <!-- Vehicle Form -->
+
+        <div class="vehicle-form">
+
+            <div class="form-title">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Add / Update Vehicle
+
+            </div>
+
+
+            <input
+                type="hidden"
+                id="vehicleId">
+
+
+            <div class="form-grid">
+
+
+                <!-- Brand -->
+
+                <div class="form-group">
+
+                    <label for="vehicleBrand">
+                        Brand
+                    </label>
+
+                    <input
+                        type="text"
+                        id="vehicleBrand"
+                        placeholder="Example: Toyota">
+
+                </div>
+
+
+
+                <!-- Model -->
+
+                <div class="form-group">
+
+                    <label for="vehicleModel">
+                        Model
+                    </label>
+
+                    <input
+                        type="text"
+                        id="vehicleModel"
+                        placeholder="Example: Innova">
+
+                </div>
+
+
+
+                <!-- Price -->
+
+                <div class="form-group">
+
+                    <label for="vehiclePrice">
+                        Price Per Day
+                    </label>
+
+                    <input
+                        type="number"
+                        id="vehiclePrice"
+                        placeholder="Example: 2500">
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="form-buttons">
+
+                <button
+                    type="button"
+                    class="save-btn"
+                    onclick="saveVehicle()">
+
+                    <i class="fa-solid fa-check"></i>
+
+                    Save Vehicle
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="clear-btn"
+                    onclick="clearVehicleForm()">
+
+                    <i class="fa-solid fa-rotate-left"></i>
+
+                    Clear
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         BOOKING MANAGEMENT
+    ================================================== -->
+
+    <section class="panel">
+
+        <div class="panel-header">
+
+            <div>
+
+                <span class="panel-label">
+                    BOOKING MANAGEMENT
+                </span>
+
+                <h2>
+                    Manage Your Bookings
+                </h2>
+
+            </div>
+
+
+            <div class="panel-header-icon">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Booking List -->
+
+        <div id="bookingList"
+             class="booking-list">
+
+            <p class="loading-text">
+                Loading bookings...
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         BOOKING HISTORY
+    ================================================== -->
+
+    <section class="panel">
+
+        <div class="panel-header">
+
+            <div>
+
+                <span class="panel-label">
+                    BOOKING HISTORY
+                </span>
+
+                <h2>
+                    Previous Services
+                </h2>
+
+            </div>
+
+
+            <div class="panel-header-icon">
+
+                <i class="fa-solid fa-clock-rotate-left"></i>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="history-content">
+
+            <div class="empty-state">
+
+                <div class="empty-icon">
+
+                    <i class="fa-solid fa-receipt"></i>
+
+                </div>
+
+                <h3>
+                    No Service History
+                </h3>
+
+                <p>
+                    Your completed service bookings will
+                    appear here.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         QUICK ACTIONS
+    ================================================== -->
+
+    <section class="quick-actions">
+
+        <div class="section-heading">
+
+            <span>
+                QUICK ACTIONS
+            </span>
+
+            <h2>
+                What would you like to do?
+            </h2>
+
+        </div>
+
+
+
+        <div class="quick-grid">
+
+
+            <!-- Book Service -->
+
+            <a href="booking.html"
+               class="quick-card">
+
+                <div class="quick-icon">
+
+                    <i class="fa-solid fa-calendar-plus"></i>
+
+                </div>
+
+
+                <div class="quick-content">
+
+                    <strong>
+                        Book Service
+                    </strong>
+
+                    <span>
+                        Schedule a vehicle service
+                    </span>
+
+                </div>
+
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+
+            <!-- View Services -->
+
+            <a href="service.html"
+               class="quick-card">
+
+                <div class="quick-icon">
+
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                </div>
+
+
+                <div class="quick-content">
+
+                    <strong>
+                        View Services
+                    </strong>
+
+                    <span>
+                        Explore available services
+                    </span>
+
+                </div>
+
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+
+            <!-- Manage Vehicle -->
+
+            <a href="#"
+               class="quick-card"
+               onclick="openVehicleManager(); return false;">
+
+                <div class="quick-icon">
+
+                    <i class="fa-solid fa-car"></i>
+
+                </div>
+
+
+                <div class="quick-content">
+
+                    <strong>
+                        Manage Vehicle
+                    </strong>
+
+                    <span>
+                        Add or update your vehicle
+                    </span>
+
+                </div>
+
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-logo">
+
+            <i class="fa-solid fa-car"></i>
+
+            VROOMLY
+
+        </div>
+
+
+        <p>
+            Smart vehicle care made simple.
+        </p>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 VROOMLY.
+        All rights reserved.
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="dashboard.js"></script>
+
+
+</body>
+
+</html>
